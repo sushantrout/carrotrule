@@ -1,0 +1,38 @@
+<div class="carrotrule-container" [class.example-is-mobile]="mobileQuery.matches">
+  <mat-toolbar color="primary" class="carrotrule-toolbar">
+    <button mat-icon-button (click)="snav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h1 class="app-name">CARROTRULE</h1>
+
+    <button mat-icon-button>
+      <mat-icon>info</mat-icon>
+    </button>
+    <button mat-icon-button>
+      <mat-icon>user</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <mat-sidenav-container
+    class="example-sidenav-container"
+    [style.marginTop.px]="mobileQuery.matches ? 56 : 0"
+  >
+    <mat-sidenav
+      #snav
+      [mode]="mobileQuery.matches ? 'over' : 'side'"
+      [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56"
+    >
+      <mat-nav-list>
+        <a mat-list-item [routerLink]="menu.route" *ngFor="let menu of menuList"> 
+          <mat-icon class="menu-icon">{{menu.icon}}</mat-icon>
+          {{menu.caption}}</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <!-- actual content -->
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

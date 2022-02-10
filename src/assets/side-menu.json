@@ -1,0 +1,39 @@
+{
+  "mainMenu": [
+    {
+      "caption": "Dashboard",
+      "route": "dashboard",
+      "icon": "dashboard"
+    },
+    {
+      "caption": "My Documents",
+      "route": "",
+      "icon": "insert_drive_file"
+    },
+    {
+      "caption": "Asset  Gallery",
+      "route": "",
+      "icon": "wallpaper"
+    },
+    {
+      "caption": "Message Box",
+      "route": "",
+      "icon": "message"
+    },
+    {
+      "caption": "Create New",
+      "route": "create-new",
+      "icon": "add_box"
+    },
+    {
+      "caption": "Activity",
+      "route": "",
+      "icon": "settings_input_component"
+    },
+    {
+      "caption": "Setup",
+      "route": "",
+      "icon": "account_circle"
+    }
+  ]
+}
