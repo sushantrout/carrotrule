@@ -1,4 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.w-65-per {
+  width: 65%;
+}
+.w-25-per {
+  width: 25%;
+}
+
+.column {
+  float: left;
+  padding: 10px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.mr-20-px{
+    margin-right: 20px;
+}
+.div-separater{
+    margin-top: 10px !important;
+}
+.div-header{
+    font-size: 32px;
+    font-weight: 500;
+}
