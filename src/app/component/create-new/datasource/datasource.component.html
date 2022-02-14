@@ -1,6 +1,25 @@
 <div class="div-separater">
-    <div class="div-header">Data Source</div>
-    <div class="div-header">Data Source</div>
-    <div class="div-header">Data Source</div>
-    <div class="div-header">Data Source</div>
+  <mat-grid-list cols="4" rowHeight="5vh" class="border-bottom-1px">
+    <mat-grid-tile colspan="3">
+        <div class="div-header">
+            Resource Data
+
+            <mat-form-field appearance="fill">
+                <mat-label>Cars</mat-label>
+                <select matNativeControl required>
+                  <option value="volvo">Volvo</option>
+                  <option value="saab">Saab</option>
+                  <option value="mercedes">Mercedes</option>
+                  <option value="audi">Audi</option>
+                </select>
+              </mat-form-field>
+        </div>
+    </mat-grid-tile
+    ><mat-grid-tile colspan="1" class="border-bottom-1px left-border-1px" >
+        <div class="div-header">
+            <span class="left-align">Resource Data</span>
+            <span class="right-align"><mat-icon class="menu-icon mat-icon-datasource">add_circle_outline</mat-icon><span class="f-14-px">New</span></span>
+        </div>
+    </mat-grid-tile>
+  </mat-grid-list>
 </div>
