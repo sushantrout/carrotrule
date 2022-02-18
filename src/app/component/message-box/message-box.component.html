@@ -1,0 +1,41 @@
+<section
+  layout="row"
+  layout-sm="column"
+  layout-align="center center"
+  layout-wrap
+>
+  <button mat-raised-button>Inbox</button>
+  <button mat-raised-button>Initiated</button>
+  <button mat-raised-button>Approved</button>
+  <button mat-raised-button>Rejected</button>
+  <button mat-raised-button color="primary">All</button>
+
+  <!-- right align -->
+  <button mat-raised-button color="primary">Columns</button>
+  <button mat-raised-button color="primary">Add</button>
+</section>
+
+<div class="card-wrapper">
+  <mat-card class="example-card">
+    <mat-card-content>
+      <table>
+        <tr>
+          <th>Title</th>
+          <th>Contract</th>
+          <th>Status</th>
+          <th>Approval Step</th>
+          <th>Currently assign to</th>
+          <th>Approval</th>
+        </tr>
+        <tr *ngFor="let element of messages">
+          <td>{{ element }}</td>
+          <td>{{ element }}</td>
+          <td>{{ element }}</td>
+          <td>{{ element }}</td>
+          <td>{{ element }}</td>
+          <td>{{ element }}</td>
+        </tr>
+      </table>
+    </mat-card-content>
+  </mat-card>
+</div>

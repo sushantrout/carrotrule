@@ -17,7 +17,7 @@
     },
     {
       "caption": "Message Box",
-      "route": "",
+      "route": "message-box",
       "icon": "message"
     },
     {

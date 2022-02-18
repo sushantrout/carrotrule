@@ -11,6 +11,7 @@ import { CarrotruleMaterialModule } from "./shared/carrotrule-material/carrotrul
 import { HttpClientModule, HTTP_INTERCEPTORS } from "@angular/common/http";
 import { LoginComponent } from "./component/login/login.component";
 import { BasicHttpInterceptor } from "./services/http-request-interceptor";
+import { FlexLayoutModule } from "@angular/flex-layout";
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { BasicHttpInterceptor } from "./services/http-request-interceptor";
     ReactiveFormsModule,
     CarrotruleMaterialModule,
     HttpClientModule,
+    FlexLayoutModule
   ],
   providers: [
     { provide: HTTP_INTERCEPTORS, useClass: BasicHttpInterceptor, multi: true },

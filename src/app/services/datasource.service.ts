@@ -13,6 +13,6 @@ export class DatasourceService {
 
   getDataSourceList() {
     let cust = this.authService.getUser();
-    return this.apiService.post(`${this.BASE_URL}getDataSourceList`, cust);
+    return this.apiService.post(`${this.BASE_URL}getDataSourceList?customerId=${cust.CustomerId}`, null);
   }
 }

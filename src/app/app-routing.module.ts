@@ -16,6 +16,12 @@ const routes: Routes = [
       import("./component/create-new/create-new.module").then(
         (m) => m.CreateNewModule
       ),
+  },{
+    path: "message-box",
+    loadChildren: () =>
+      import("./component/message-box/message-box.module").then(
+        (m) => m.MessageBoxModule
+      ),
   },
 ];
 
